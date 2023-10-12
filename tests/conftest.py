@@ -1,6 +1,7 @@
 import pytest
-from rest_framework.test import APIClient
 from faker import Faker
+from rest_framework.test import APIClient
+
 
 @pytest.fixture
 def client() -> APIClient:
@@ -10,4 +11,3 @@ def client() -> APIClient:
 @pytest.fixture
 def faker() -> Faker:
     return Faker()
-
